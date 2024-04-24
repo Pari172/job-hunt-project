@@ -58,7 +58,7 @@ function JobList({ jobdata }) {
           {filteredData.map((item, index) => (
             <div
               key={index}
-              className="flex space-x-8 bg-orange-100 border-2 cursor-pointer border-orange-500 w-[70%] p-2 rounded-xl mb-10 ml-[20%] h-50"
+              className="flex space-x-8 bg-orange-100 border-2 cursor-pointer border-orange-500 w-[70%] p-2 rounded-xl mb-10 ml-[20%] h-50 "
             >
               {/* {item.job_title} {item.job_employment_type.toLowerCase()} */}
               <img src={item.company.logo} className="  rounded-sm p-4"/>
@@ -76,7 +76,7 @@ function JobList({ jobdata }) {
                 </h6>
                 <div className="flex space-x-52 p-6 justify-center">
                   <h3 className="font-light text-gray-800 mt-4">posted {item.postDate}</h3>
-                  <a href={item.url} target="_blank" className="flex space-x-2 h-fit w-fit pl-6 pr-6 pt-4 pb-4 rounded-[50px] bg-orange-500 text-white font-bold">
+                  <a href={item.url} target="_blank" className="flex space-x-2 h-fit w-fit pl-6 pr-6 pt-4 pb-4 rounded-[50px] bg-orange-500 text-white font-bold hover:bg-orange-400">
                     <p>Apply Now</p> <img src={process.env.PUBLIC_URL + '/arrow-right-line.png'} alt="arrow" />
                   </a>
                 </div>
